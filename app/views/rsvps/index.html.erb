@@ -1,0 +1,8 @@
+<h1>RSVPs</h1>
+<% @rsvps.each do |rsvp| %>
+  <%= rsvp.name %> - 
+  <%= rsvp.will_attend ? 'Yes' : 'No' %>
+  </br>
+<% end %>
+<br></br>
+<%= link_to 'Back', events_path, class: 'btn btn-primary' %>

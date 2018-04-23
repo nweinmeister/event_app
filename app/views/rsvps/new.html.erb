@@ -1,0 +1,13 @@
+<%= form_for @rsvp do |f| %>
+  <div class="form-group">
+    <%= f.label :name %>
+    <%= f.text_field :name, class: 'form-control' %>
+  </div>
+  <div class="form-group">
+    <%= f.label :will_attend %>
+    <%= f.check_box :will_attend %>
+  </div>
+
+  <%= f.submit 'Save', class: 'btn btn-primary' %>
+  <%= link_to 'Cancel', events_path, class: 'btn btn-secondary' %>
+<% end %>
